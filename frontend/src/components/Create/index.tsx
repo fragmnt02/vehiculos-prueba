@@ -60,7 +60,7 @@ export const Create = () => {
             <Input type='number' min='0' value={km} onChange={event => setKm(parseInt(event.target.value))} />
             <br/>
             <ButtonsContainer>
-                <SecondaryButton onClick={cancel} color="rgba(0, 0, 0, 0.5)" border={false} >Cancel</SecondaryButton>
+                <SecondaryButton onClick={cancel} color='rgba(0, 0, 0, 0.5)' border={false} >Cancel</SecondaryButton>
                 <PrimaryButton onClick={submit}>Create</PrimaryButton>
             </ButtonsContainer>
         </Container>

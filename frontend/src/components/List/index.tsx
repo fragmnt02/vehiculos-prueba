@@ -27,8 +27,8 @@ export const List = () => {
     return (
         <Container>
             <TitleContainer>
-                <Title color="white" size={32}>List tickets</Title>
-                <SecondaryButton onClick={create} color="white" border={true} >Create ticket</SecondaryButton>
+                <Title color='white' size={32}>List tickets</Title>
+                <SecondaryButton onClick={create} color='white' border={true} >Create ticket</SecondaryButton>
                 <Text color='white'>Click on card to start maintainance</Text>
             </TitleContainer>
             <TicketsContainer>

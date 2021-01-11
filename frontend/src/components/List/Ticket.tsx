@@ -1,10 +1,8 @@
 import React, { useState } from 'react';
-import { useHistory } from 'react-router-dom';
 import { Card, Image, Title, TextContainer } from './styles';
 import { TicketModel } from '../../utils/models/Ticket';
 
 export const Ticket = ({ description, brand, model, estimatedate, image, km, _id, working }: TicketModel) => {
-    const history = useHistory();
     const [maintaining, setMaintaining] = useState(working)
     const [imageSrc, setImageSrc] = useState(image);
     const update = async () => {
