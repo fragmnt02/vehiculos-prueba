@@ -33,6 +33,10 @@ const ticketSchema = new Schema({
         maxlength: 250,
         required: true
     },
+    working: {
+        type: Boolean,
+        required: true
+    }
 });
 
 exports.Ticket = mongoose.model('ticket', ticketSchema);
