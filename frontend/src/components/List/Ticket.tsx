@@ -7,14 +7,14 @@ export const Ticket = ({ description, brand, model, estimatedate, image, km, _id
     const [imageSrc, setImageSrc] = useState(image);
     const update = async () => {
         if (maintaining) {
-            alert('Car maintainance finished, deleting ticket.')
+            alert('Car maintenance finished, deleting ticket.')
             await fetch(`${process.env.REACT_APP_FETCH_URL}/tickets/${_id}`,{
                 method:'DELETE'
             });
             window.location.reload(); 
             return;
         }
-        alert('Starting car maintainance.');
+        alert('Starting car maintenance.');
         const body = {
             working: true
         };
