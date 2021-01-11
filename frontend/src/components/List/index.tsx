@@ -27,7 +27,7 @@ export const List = () => {
     return (
         <Container>
             <TitleContainer>
-                <Title color='white' size={32}>List of cars in maintainance</Title>
+                <Title color='white' size={32}>List of Cars for Maintainance</Title>
                 <SecondaryButton onClick={create} color='white' border={true} >Create ticket</SecondaryButton>
                 <Text color='white'>Click on card to start maintainance and click again to finish it</Text>
             </TitleContainer>
